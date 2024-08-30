@@ -1,0 +1,124 @@
+/* ------google fonts used------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, ::before, ::after{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+
+}
+
+h1,p{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* -----card----- */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.card
+{
+    width: 320px;
+    height: 400px;
+    background-color: #020202;
+    border-radius: 1rem;
+    padding: 4rem 2rem 0;
+    color: #ffffff;
+    overflow-y: hidden;
+}
+
+.card__img{
+    position: absolute;
+    width: 260px;
+    filter: drop-shadow(5px 10px 15px rgba(255, 145, 0, 0.279));
+}
+
+.card__data{
+    transform: translateY(13.2rem);
+    text-align: center;
+}
+
+.card__title{
+    font-size: 1.5rem;
+    color: #ffa600;
+    margin-bottom: .5rem;
+
+}
+.card__price{
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+}
+
+.card__description{
+    font-size: .875rem;
+    text-align: initial;
+    margin-bottom: 1.25rem;
+    opacity: 0;
+}
+
+.card__button{
+    display: block;
+    width: max-content;
+    padding: 1.125rem 2rem;
+    background-color:  #ffa600;
+    color:#E9EAEC;
+    border-radius: .5rem;
+    font-weight: 600;
+    transition: .2s;
+    opacity: 0;
+}
+
+.car__button:hover{
+    box-shadow: 0 18px 40px -12px rgb(242, 162, 12);
+} 
+.card__img,
+.car__data,
+.car__title,
+.car__price,
+.ca__description{
+    transition: .5s;
+}
+
+/* Hover card effect */
+.card:hover .card__img {
+    transform: translate(-1.5rem, -9.5rem) rotate(-20deg);
+  }
+  
+  .card:hover .card__data {
+    transform: translateY(4.8rem);
+  }
+  
+  .card:hover .card__title {
+    transform: translateX(-2.3rem);
+    margin-bottom: 0;
+  }
+  
+  .card:hover .card__price {
+    transform: translateX(-6.8rem);
+  }
+  
+  .card:hover .card__description, 
+  .card:hover .card__button {
+    transition-delay: .2s;
+    opacity: 1;
+} 
